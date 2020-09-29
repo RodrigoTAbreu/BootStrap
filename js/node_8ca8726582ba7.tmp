@@ -1,0 +1,2 @@
+let line = gets(); // Retorna a próxima linha de entrada
+console.log(line); // Imprime o dado
