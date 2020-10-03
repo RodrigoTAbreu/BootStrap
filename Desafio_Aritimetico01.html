@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pte-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web Developer</title>
+</head>
+<body>
+    <h1>
+        Desafio Aritimético 01
+    </h1>
+    <p>
+        <h2>Desafio</h2>
+<p> Crie um programa que leia 6 valores. Você poderá receber valores negativos e/ou positivos como entrada, devendo desconsiderar os valores nulos. Em seguida, apresente a quantidade de valores positivos digitados.</p>
+
+<h2>Entrada</h2>
+<p> Você receberá seis valores, negativos e/ou positivos.  </p>
+
+<h2>Saída</h2>
+<p> Exiba uma mensagem dizendo quantos valores positivos foram lidos assim como é exibido abaixo no exemplo de saída. Não esqueça da mensagem "valores positivos" ao final.</p>
+
+<h1>Resolução na plataforma da DIO</h1>
+<p>let vr1 = parseFloat(gets());</p>
+    let vr2 = parseFloat(gets());
+    let vr3 = parseFloat(gets());
+    let vr4 = parseFloat(gets());
+    let vr5 = parseFloat(gets());
+    let vr6 = parseFloat(gets());
+    
+   <p>let numeros = [];</p> 
+    numeros.push(vr1,vr2,vr3,vr4,vr5,vr6);
+    <br>
+    <p> let qnt=0;</p>
+    for(const item of numeros){
+      if (item > 0 ){
+        qnt++;
+      }
+    }
+    console.log(`${qnt} valores positivos`);
+    </p>
+        
+    
+</body>
+</html>
