@@ -1,9 +1,30 @@
-let a = '#'
-let resp = document.getElementById('tab')
+let a = '#';
+let b = ' ';
+let tamanho = 20;
+let linha = 0;
+let col = 0;
+let resp = document.getElementById('tab');
 
-for(let i = 0; i <4;i++){
-    resp.innerHTML += ` ${a} `
-    resp.innerHTML +=` ` 
+while (linha <= 8){
+    if (col <= 8){
+        console.log(a)
+        col++
+    }
+    resp.innerHTML += `\n`;
+    linha++
 }
-resp.innerHTML += `<p>${a}</p>`
-i = 0;
+
+
+/*
+for (let linha = 0; linha < 8; linha++){
+    for (let cont = 0; cont <tamanho; cont++){
+        if( cont == 8){
+            resp.innerHTML += `\n`
+        }else if(cont%2 !=0){
+            resp.innerHTML += `${b}`;
+        }else {
+            resp.innerHTML += `${a}`
+        }
+    
+    }
+}*/
