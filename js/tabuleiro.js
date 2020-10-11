@@ -1,30 +1,18 @@
-let a = '#';
+let size = 8;
 let b = ' ';
-let tamanho = 20;
-let linha = 0;
-let col = 0;
 let resp = document.getElementById('tab');
 
-while (linha <= 8){
-    if (col <= 8){
-        console.log(a)
-        col++
-    }
-    resp.innerHTML += `\n`;
-    linha++
-}
 
-
-/*
-for (let linha = 0; linha < 8; linha++){
-    for (let cont = 0; cont <tamanho; cont++){
-        if( cont == 8){
-            resp.innerHTML += `\n`
-        }else if(cont%2 !=0){
-            resp.innerHTML += `${b}`;
+for (let linha = 0; linha < size; linha++){ /* contando a linha */
+    for (let col = 0; col <size; col++){ /*contando a coluna */
+        if( (linha + col) %2 == 0) { /*se a soma da linha e da col for resto 0 */
+            b += ` ` /*imprime espaço */
         }else {
-            resp.innerHTML += `${a}`
+            b += `#`; /*se não imprime # */
         }
     
     }
-}*/
+    b +=`\n` /*ao final de cada for da linha aplicar-se a espaço */
+}
+console.log(b) /*impressão no console */
+
